@@ -8,11 +8,11 @@ export default class MarkdownPreview extends React.Component {
 
 		Marked.setOptions({
 			renderer: new Marked.Renderer(),
-			gfm: false,
+			gfm: true,
 			tables: true,
-			breaks: false,
+			breaks: true,
 			pedantic: true,
-			sanitize: false,
+			sanitize: true,
 			smartLists: true,
 			smartypants: true
 		});
